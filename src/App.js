@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import FaqComp from "./components/FaqComp";
+import FooterComp from "./components/FooterComp";
+import GalleryComp from "./components/GalleryComp";
+import HeroComp from "./components/HeroComp";
+import LoaderHome from "./components/LoaderHome";
+import NavbarComp from "./components/NavbarComp";
+import ServiceComp from "./components/ServiceComp";
+import "./css/main.css";
+import "animate.css";
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LoaderHome />
+      <HeroComp />
+
+      {/* Content */}
+      <NavbarComp />
+      <GalleryComp />
+      <ServiceComp />
+      <FaqComp />
+
+      {/* Content */}
+
+      <FooterComp />
+    </>
   );
 }
 

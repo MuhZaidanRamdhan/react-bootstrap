@@ -1,0 +1,105 @@
+* {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  margin: 0;
+}
+
+.loaderHome {
+  position: fixed;
+  z-index: 10000;
+  background-color: #010101;
+}
+
+.containerLoaderHome {
+  line-height: 0;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(46, 44, 44, 0.2)),
+    url("../assets/hero/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 10px 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar.color-active {
+  background-color: #212529;
+  transform: scaleY(1);
+  padding: 1rem 0;
+}
+
+.gallery img {
+  height: 220px;
+}
+
+.gallery {
+  padding-top: 100px;
+}
+
+.title-gallery {
+  margin: 0 0 2rem;
+}
+
+.logoNF {
+  width: 180px;
+  height: 160px;
+  margin-top: -50px;
+}
+
+.faq {
+  padding-top: 100px;
+}
+
+.services-title {
+  margin-top: -100px;
+}
+
+.faq .accordion {
+  --bs-accordion-bg: #f1faee;
+}
+
+.faq .accordion .accordion-item .accordion-header {
+  line-height: 2;
+}
+
+.faq .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.footer {
+  background-color: #212529;
+}
+
+@media screen and (max-width: 992px) {
+  .services {
+    padding-top: 200px;
+  }
+
+  .faq {
+    padding-top: 100px;
+  }
+
+  .footer {
+    padding-top: 1000px;
+  }
+
+  @media screen and (max-width: 670px) {
+    .services {
+      padding-top: 200px;
+    }
+  }
+}
