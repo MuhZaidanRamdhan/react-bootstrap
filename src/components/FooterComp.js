@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 function FooterComp() {
@@ -16,9 +15,17 @@ function FooterComp() {
           </Col>
         </Row>
         <Row>
+          <Col className="d-flex justify-content-center align-items-center mt-4">
+            <h6 className="building text-white mt-3 mx-2">Building with</h6>
+            <a href="https://react.dev/">
+              <i class="react-logo fs-1 fa-brands fa-react"></i>
+            </a>
+          </Col>
+        </Row>
+        <Row>
           <Col>
-            <h6 className="text-center text-white mt-5">
-              Create with ❤️ and 🍵 from student at STT-NF 2024.{" "}
+            <h6 className="create text-center text-white mt-5">
+              Create with❤️and🍵from student at STT-NF 2024.
             </h6>
           </Col>
         </Row>

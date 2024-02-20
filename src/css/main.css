@@ -84,6 +84,10 @@
   background-color: #212529;
 }
 
+.footer .react-logo {
+  color: #61dafb;
+}
+
 @media screen and (max-width: 992px) {
   .services {
     padding-top: 200px;
@@ -97,9 +101,25 @@
     padding-top: 1000px;
   }
 
+  .footer .react-logo {
+    margin-top: 10px;
+  }
+
   @media screen and (max-width: 670px) {
     .services {
       padding-top: 200px;
+    }
+
+    .footer .building {
+      font-size: 14px;
+    }
+
+    .footer .react-logo {
+      margin-top: 10px;
+    }
+
+    .footer .create {
+      font-size: 12px;
     }
   }
 }
